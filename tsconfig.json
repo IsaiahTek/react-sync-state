@@ -14,7 +14,6 @@
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
-    "declarationDir": "./dist/@types",
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
