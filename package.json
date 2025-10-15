@@ -1,0 +1,8 @@
+{
+  "peerDependencies": {
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "react": "^19.2.0"
+  }
+}
