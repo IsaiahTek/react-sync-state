@@ -1,6 +1,6 @@
 # SyncState
 
-**SyncState** is a lightweight, hook-based state management library for React, inspired by **Zustand**, with powerful, built-in features for **server data synchronization** and **optimistic updates**, similar to **TanStack Query** (React Query).
+**SyncState** is a lightweight, hook-based state management library for React, with powerful, built-in features for **server data synchronization** and **optimistic updates**.
 
 It provides two core store types:
 1.  **`Store`**: A minimal, fast, global state container.
