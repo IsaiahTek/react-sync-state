@@ -15,7 +15,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Store = exports.SynqStore = void 0;
-__exportStar(require("dist"), exports);
+__exportStar(require("./types"), exports);
 var synq_store_1 = require("./synq_store");
 Object.defineProperty(exports, "SynqStore", { enumerable: true, get: function () { return synq_store_1.SynqStore; } });
 var store_1 = require("./store");
