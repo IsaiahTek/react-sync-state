@@ -44,16 +44,12 @@ export class Store<T> {
 
 
   public update(item: T, key: string) {
-    const oldState = this.snapshot;
-    const index = this._indexOf(key);
-    if (index !== -1) {
-      oldState[index] = item;
-    }
-    this.setState(oldState)
+    const newState = this.snapshot.map((snap) => (snap as Record<string, unknown>)[this.key] === key ? item : snap);
+    this.setState(newState)
   }
 
   public remove(key: string) {
-    const newState = this.snapshot.filter((snap)=>snap[this.key] !== key)
+    const newState = this.snapshot.filter((snap) => (snap as Record<string, unknown>)[this.key] !== key)
     this.setState(newState)
   }
 
