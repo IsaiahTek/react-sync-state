@@ -53,12 +53,8 @@ export class Store<T> {
   }
 
   public remove(key: string) {
-    const oldState = this.snapshot;
-    const index = this._indexOf(key);
-    if (index !== -1) {
-      oldState.splice(index, 1);
-    }
-    this.setState(oldState)
+    const newState = this.snapshot.filter((snap)=>snap[this.key] !== key)
+    this.setState(newState)
   }
 
   private _indexOf(id: unknown) {
