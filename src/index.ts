@@ -1,4 +1,5 @@
-export * from "./types";
+export type * from "./types";
 export * from "./synq";
 export * from "./use_store";
-// export * from "./store";
+export { SynqStore } from "./synq_store";
+export { Store } from "./store";

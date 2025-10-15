@@ -14,7 +14,11 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./types"), exports);
+exports.Store = exports.SynqStore = void 0;
 __exportStar(require("./synq"), exports);
 __exportStar(require("./use_store"), exports);
+var synq_store_1 = require("./synq_store");
+Object.defineProperty(exports, "SynqStore", { enumerable: true, get: function () { return synq_store_1.SynqStore; } });
+var store_1 = require("./store");
+Object.defineProperty(exports, "Store", { enumerable: true, get: function () { return store_1.Store; } });
 //# sourceMappingURL=index.js.map
