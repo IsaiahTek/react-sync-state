@@ -1,5 +1,3 @@
-export type * from "./types";
-export * from "./synq";
-export * from "./use_store";
+export * from "dist";
 export { SynqStore } from "./synq_store";
 export { Store } from "./store";
