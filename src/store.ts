@@ -1,5 +1,4 @@
 // -----------------------------
-// Core Store (Zustand-like)
 
 // import { addStore } from "./synq";
 import { Listener } from "./types";
@@ -90,10 +89,6 @@ export class Store<T> {
 
 }
 
-
-// -----------------------------
-// Core Store (Zustand-like)
-// -----------------------------
 
 // import { Listener } from "./types";
 

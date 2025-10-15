@@ -3,6 +3,38 @@
     "react": "^19.2.0"
   },
   "devDependencies": {
-    "react": "^19.2.0"
-  }
+    "react": "^19.2.0",
+    "typescript": "^5.6.3"
+  },
+  "name": "sync-state-react",
+  "version": "1.0.0",
+  "description": "A minimal reactive state management plugin for React.js and Next.js apps.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaiahTek/react-sync-state.git"
+  },
+  "keywords": [
+    "nextjs",
+    "state",
+    "reactjs",
+    "reactive",
+    "data",
+    "store",
+    "update",
+    "ui",
+    "plugin"
+  ],
+  "author": "Engr. Isaiah Pius E. <isaiahtech1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsaiahTek/react-sync-state/issues"
+  },
+  "homepage": "https://github.com/IsaiahTek/react-sync-state#readme"
 }
