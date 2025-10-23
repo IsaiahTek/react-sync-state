@@ -27,6 +27,7 @@ export class SynqStore<T, B> extends Store<T> {
     async fetch() {
         if (!this.options.fetcher) return;
         this.status = "loading";
+        this.setState(this.snapshot)
         try {
             const data = await this.options.fetcher();
             this.setState(data);
