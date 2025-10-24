@@ -24,7 +24,8 @@ class SynqStore extends store_1.Store {
         if (!this.options.fetcher)
             return;
         this.status = "loading";
-        this.setState(this.snapshot);
+        const temp = Object.assign([], this.snapshot);
+        this.setState(temp);
         try {
             const data = await this.options.fetcher();
             this.setState(data);
@@ -33,6 +34,8 @@ class SynqStore extends store_1.Store {
         catch (err) {
             console.error("Fetch failed", err);
             this.status = "error";
+            const temp = Object.assign([], this.snapshot);
+            this.setState(temp);
         }
     }
     // -------------------

@@ -27,7 +27,8 @@ export class SynqStore<T, B> extends Store<T> {
     async fetch() {
         if (!this.options.fetcher) return;
         this.status = "loading";
-        this.setState(this.snapshot)
+        const temp = Object.assign([], this.snapshot);
+        this.setState(temp);
         try {
             const data = await this.options.fetcher();
             this.setState(data);
@@ -35,6 +36,8 @@ export class SynqStore<T, B> extends Store<T> {
         } catch (err) {
             console.error("Fetch failed", err);
             this.status = "error";
+            const temp = Object.assign([], this.snapshot);
+            this.setState(temp);
         }
     }
 
