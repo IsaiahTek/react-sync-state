@@ -24,6 +24,18 @@ export class SynqStore<T, B> extends Store<T> {
         }
     }
 
+    get isLoading() {
+        return this.status === "loading";
+    }
+
+    get isError() {
+        return this.status === "error";
+    }
+
+    get isSuccess() {
+        return this.status === "success";
+    }
+
     async fetch() {
         if (!this.options.fetcher) return;
         this.status = "loading";
