@@ -138,14 +138,14 @@
   </g>
   
   <!-- Right side: Text content -->
-  <g transform="translate(550, 220)">
+  <g transform="translate(520, 220)">
     <!-- Main title -->
-    <text x="0" y="0" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="90" font-weight="800" fill="#d1fae5" filter="url(#textGlow)">
+    <text x="0" y="0" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="80" font-weight="800" fill="#d1fae5" filter="url(#textGlow)">
       React-Sync-State
     </text>
     
     <!-- Subtitle -->
-    <text x="0" y="60" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="400" fill="#d1fae5" opacity="0.9">
+    <text x="0" y="55" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="400" fill="#d1fae5" opacity="0.9">
       React hooks for synq-store state management
     </text>
     
@@ -172,7 +172,7 @@
     
     <!-- Code snippet hint -->
     <g transform="translate(0, 185)">
-      <rect x="0" y="0" width="620" height="80" rx="8" fill="#064e3b" opacity="0.5" stroke="#6ee7b7" stroke-width="1" opacity="0.3"/>
+      <rect x="0" y="0" width="620" height="80" rx="8" fill="#064e3b" opacity="0.5" stroke="#6ee7b7" stroke-width="1"/>
       <text x="15" y="30" font-family="'Fira Code', 'Courier New', monospace" font-size="16" fill="#6ee7b7" opacity="0.9">
         const data = useServerSyncedStore(store);
       </text>
