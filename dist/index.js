@@ -15,12 +15,11 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useServerSyncedStore = exports.useStore = exports.Store = exports.SynqStore = void 0;
-__exportStar(require("./synq"), exports);
-__exportStar(require("./use_store"), exports);
-var synq_store_1 = require("./synq_store");
+__exportStar(require("synq-store"), exports);
+var synq_store_1 = require("synq-store");
 Object.defineProperty(exports, "SynqStore", { enumerable: true, get: function () { return synq_store_1.SynqStore; } });
-var store_1 = require("./store");
-Object.defineProperty(exports, "Store", { enumerable: true, get: function () { return store_1.Store; } });
+var synq_store_2 = require("synq-store");
+Object.defineProperty(exports, "Store", { enumerable: true, get: function () { return synq_store_2.Store; } });
 var use_store_1 = require("./use_store");
 Object.defineProperty(exports, "useStore", { enumerable: true, get: function () { return use_store_1.useStore; } });
 Object.defineProperty(exports, "useServerSyncedStore", { enumerable: true, get: function () { return use_store_1.useServerSyncedStore; } });

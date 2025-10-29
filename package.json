@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/IsaiahTek/react-sync-state/issues"
   },
-  "homepage": "https://github.com/IsaiahTek/react-sync-state#readme"
+  "homepage": "https://github.com/IsaiahTek/react-sync-state#readme",
+  "dependencies": {
+    "synq-store": "github:IsaiahTek/synq-store"
+  }
 }

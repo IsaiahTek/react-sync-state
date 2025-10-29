@@ -1,5 +1,5 @@
 import { useEffect, useSyncExternalStore } from "react";
-import { Store, SynqStore } from "./types";
+import { Store, SynqStore } from "synq-store/dist/types";
 
 export function useStore<T>(store: Store<T>): T {
   return useSyncExternalStore(
