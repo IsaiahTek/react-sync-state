@@ -1,7 +1,7 @@
 # SyncState
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/IsaiahTek/synq-store/main/images/react_sync_state_cover.svg" />
+<img src="https://raw.githubusercontent.com/IsaiahTek/react-sync-state/main/images/react_sync_state_cover.svg" />
 </p>
 
 **SyncState** is a lightweight, hook-based state management library for React, with powerful, built-in features for **server data synchronization** and **optimistic updates**.
