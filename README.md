@@ -1,8 +1,12 @@
 # SyncState
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/IsaiahTek/synq-store/main/images/react_sync_state_cover.svg" />
+</p>
+
 **SyncState** is a lightweight, hook-based state management library for React, with powerful, built-in features for **server data synchronization** and **optimistic updates**.
 
-It provides two core store types:
+It uses [synq-store](https://synq-store) provides two core store types:
 1.  **`Store`**: A minimal, fast, global state container.
 2.  **`SynqStore`**: An extended store for managing and synchronizing collections of server-side data (e.g., resources, lists) with automatic fetching, optimistic mutations, and background re-fetching.
 
