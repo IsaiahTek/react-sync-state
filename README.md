@@ -1,10 +1,10 @@
-# React-Sync-State
+# React-Synq-Store
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/IsaiahTek/react-sync-state/main/images/react_sync_state_cover.svg" />
+<img src="https://raw.githubusercontent.com/IsaiahTek/react-synq-store/main/images/react_sync_state_cover.svg" />
 </p>
 
-**React-Sync-State** is a lightweight, hook-based state management library for React and Next.js, with powerful, built-in features for **local state management**, **server data synchronization**, and **optimistic updates**.
+**React-Synq-Store** is a lightweight, hook-based state management library for React and Next.js, with powerful, built-in features for **local state management**, **server data synchronization**, and **optimistic updates**.
 
 It's built on top of [synq-store](https://github.com/IsaiahTek/synq-store) and provides convenient React hooks for seamless integration into your React applications.
 
@@ -26,13 +26,13 @@ It's built on top of [synq-store](https://github.com/IsaiahTek/synq-store) and p
 
 ```bash
 # Using npm
-npm install react-sync-state
+npm install react-synq-store
 
 # Using yarn
-yarn add react-sync-state
+yarn add react-synq-store
 
 # Using pnpm
-pnpm add react-sync-state
+pnpm add react-synq-store
 ```
 
 ---
@@ -42,7 +42,7 @@ pnpm add react-sync-state
 ### Basic Local State Management
 
 ```typescript
-import { Store, useStore } from 'react-sync-state';
+import { Store, useStore } from 'react-synq-store';
 
 // Create a store
 const counterStore = new Store({ count: 0 });
@@ -64,7 +64,7 @@ function Counter() {
 ### Server State Synchronization
 
 ```typescript
-import { SynqStore, useServerSyncedStore } from 'react-sync-state';
+import { SynqStore, useServerSyncedStore } from 'react-synq-store';
 
 // Define your data type
 interface Todo {
@@ -138,7 +138,7 @@ function TodoList() {
 A `Store` is a simple container for local state that can be shared across components:
 
 ```typescript
-import { Store } from 'react-sync-state';
+import { Store } from 'react-synq-store';
 
 const uiStore = new Store({
   theme: 'light',
@@ -157,7 +157,7 @@ const currentState = uiStore.getState();
 A `SynqStore` extends `Store` with server synchronization capabilities:
 
 ```typescript
-import { SynqStore } from 'react-sync-state';
+import { SynqStore } from 'react-synq-store';
 
 const store = new SynqStore<ItemType>(initialData, {
   fetcher: () => fetchFromServer(),
@@ -220,7 +220,7 @@ if(myStore.isError){
 Here's a complete example with error handling and loading states:
 
 ```typescript
-import { SynqStore, useServerSyncedStore } from 'react-sync-state';
+import { SynqStore, useServerSyncedStore } from 'react-synq-store';
 
 interface Job {
   id: string;
@@ -277,7 +277,7 @@ function JobList({ filter }: { filter?: string }) {
 
 ## Comparison with Other Libraries
 
-| Feature | React-Sync-State | Redux | Zustand | React Query |
+| Feature | React-Synq-Store | Redux | Zustand | React Query |
 |---------|------------------|-------|---------|-------------|
 | Bundle Size | ~3KB | ~15KB | ~3KB | ~40KB |
 | Server Sync | ✅ Built-in | ❌ Manual | ❌ Manual | ✅ Built-in |
@@ -302,7 +302,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Related Projects
 
-- [synq-store](https://github.com/IsaiahTek/synq-store) - The core state management library powering React-Sync-State
+- [synq-store](https://github.com/IsaiahTek/synq-store) - The core state management library powering React-Synq-Store
 
 ---
 

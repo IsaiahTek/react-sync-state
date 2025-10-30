@@ -141,7 +141,7 @@
   <g transform="translate(520, 220)">
     <!-- Main title -->
     <text x="0" y="0" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="80" font-weight="800" fill="#d1fae5" filter="url(#textGlow)">
-      React-Sync-State
+      React-Synq-Store
     </text>
     
     <!-- Subtitle -->
