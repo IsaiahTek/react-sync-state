@@ -7,7 +7,7 @@
     "react": "^18.0.0 || ^19.0.0",
     "typescript": "^5.9.3"
   },
-  "name": "sync-state-react",
+  "name": "react-sync-state",
   "version": "1.0.0",
   "description": "A minimal reactive state management plugin for React.js and Next.js apps.",
   "main": "dist/index.js",
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/IsaiahTek/react-sync-state#readme",
   "dependencies": {
-    "synq-store": "github:IsaiahTek/synq-store"
+    "synq-store": "^1.0.0"
   }
 }
